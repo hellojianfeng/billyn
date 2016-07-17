@@ -91,7 +91,7 @@
 				}
 			}
 		},
-		"propertyManagement": {
+		"propertyAgentApp": {
 			"alias": "置业管理",
 			"type": "app.normal",
 			"nuts": {
@@ -99,13 +99,12 @@
 					"alias": "个人置业",
 					"grants": {
 						"admin": [
-							"manageOwnerProperty|管理个人资产"
+							"adminPropertyOwner|设置个人置业"
 						],
-						"propertyManager": "manageOwnerProperty|管理个人资产",
+						"manager": "managePropertyOwner|管理个人置业",
 						"client": [
 							"ownerProfile|个人档案",
-							"propertyEvaluation|资产评估",
-							"propertyReport|资产报告"
+							"propertyAssessment|资产评估"
 						]
 					}
 				},
@@ -113,9 +112,9 @@
 					"alias": "置业信息",
 					"grants": {
 						"admin": [
-							"managePropertyInfo|管理置产信息"
+							"adminPropertyInfo|管理置产信息"
 						],
-						"propertyManager": [
+						"manager": [
 							"managePropertyInfo|管理置产信息"
 						],
 						"client": [
@@ -128,17 +127,17 @@
 				"propertyProduct": {
 					"alias": "置业产品",
 					"grants": {
-						"admin": "managePropertyProduct|管理置业产品",
-						"propertyManager": "managePropertyProduct|管理置业产品",
+						"admin": "adminPropertyProduct|管理置业产品",
+						"manager": "managePropertyProduct|管理置业产品",
 						"client": [
-							"searchProduct｜查找置业",
+							"searchProduct|查找置业",
 							"classifyProduct|置业产品分类"
 						]
 					}
 				}
 			}
 		},
-		"fangData": {
+		"propertyDataApp": {
 			"alias": "不动产数据中心",
 			"type": "app.normal",
 			"nuts": {
@@ -180,7 +179,7 @@
 				}
 			}
 		},
-		"fangEvaluate": {
+		"propertyAssessmentApp": {
 			"alias": "资产评估机构",
 			"type": "app.normal",
 			"nuts": {

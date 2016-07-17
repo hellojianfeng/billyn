@@ -1,11 +1,11 @@
 {
 	"type": "nut.core",
 	"permits": {
-		"spaceAdmin": {
-			"alias": "space admin"
+		"adminSpace": {
+			"alias": "admin space"
 		},
-		"spaceManager": {
-			"alias": "space member"
+		"manageSpace": {
+			"alias": "manage space"
 		},
 		"spaceCustomer": {
 			"alias": "space customer"
@@ -21,32 +21,32 @@
 			],
 			"apps": ["weMember"]			
 		},
-		"agent.propertyManagement": {
-			"name": "agent.propertyManagement",
-			"alias": "固定资产管理公司",
+		"agent.property.com": {
+			"name": "agent.property.com",
+			"alias": "不动产管理中介",
 			"description": "专注于客户固定资产项目管理的置业管理公司",
 			"roles": [
 				"admin"
 			],
-			"apps": ["propertyManagement"]
+			"apps": ["propertyAgentApp"]
 		},
-		"fangData": {
-			"name": "fangData",
-			"alias": "房地产数据中心",
-			"description": "专注于提供准确，全面，快速的房地产数据",
+		"data.property.com": {
+			"name": "data.property.com",
+			"alias": "不动产数据机构",
+			"description": "专注于提供准确，全面，快速的不动产数据",
 			"roles": [
 				"admin"
 			],
-			"apps": ["fangData"]
+			"apps": ["propertyDataApp"]
 		},
-		"propertyEvaluation": {
-			"name": "propertyEvaluation",
-			"alias": "资产评估机构",
-			"description": "专注于提供权威的，全面的，及时的资产评估数据和报告",
+		"assessment.property.com": {
+			"name": "assessment.property.com",
+			"alias": "不动产评估机构",
+			"description": "专注于提供权威的，全面的，及时的资产评估分析和报告",
 			"roles": [
 				"admin"
 			],
-			"apps": ["fangEvaluate"]
+			"apps": ["propertyAssessmentApp"]
 		}
 	}
 }
